@@ -4,3 +4,4 @@ console.log(x);
 document.write(x);//printing x's value
 var myname= 65;
  
+

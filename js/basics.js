@@ -24,11 +24,43 @@
 
 
 
-
-var x= prompt("Temperature in Celcius");
+//task
+/* var x= prompt("Temperature in Celcius");
 var f= 9/5*x + 32;
 alert("Farenheit: "+ f +" Degree");
-console.log("Task Complete!");
+console.log("Task Complete!"); */
 
+
+
+//object data type
+var man={name:"safa",age:87}//these are the properties of man object
+//some other data types
+/* undefined
+Empty value
+null
+NaN */
+
+
+/* 
+//Numeric Strings
+"25"-"5"
+"25"/"5" // result 10
+"25"*"5"
+"25"%"5"
+"25"+"5" //exception
+ */
+
+
+//functions
+//hexa number
+var a= 0xBB; // will return the decimal value 187
+var y=a.toString();//"187"
+var x=a.toString(16);//will return the hexa/binary/decimal num as string
+a= 3.1416
+y=a.toPrecision(3);//3.14
+var t="safa"
+y= parseInt(t); // converting a  integer number string to an integer
+y= parseFloat(t);
+y=isNaN(t); // returns true if its not a number
 
 
