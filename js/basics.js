@@ -51,16 +51,18 @@ NaN */
  */
 
 
-//functions
-//hexa number
-var a= 0xBB; // will return the decimal value 187
-var y=a.toString();//"187"
-var x=a.toString(16);//will return the hexa/binary/decimal num as string
-a= 3.1416
-y=a.toPrecision(3);//3.14
-var t="safa"
-y= parseInt(t); // converting a  integer number string to an integer
-y= parseFloat(t);
-y=isNaN(t); // returns true if its not a number
+//boolean variables
+var x= true;
+t=Boolean(x)
+x=null
+t=Boolean(x)//returns false cz x=null
+//undefined, null, NaN (Boolean() returns False)
+
+
+
+
+
+
+
 
 
