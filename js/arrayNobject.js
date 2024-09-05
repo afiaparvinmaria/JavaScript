@@ -23,4 +23,8 @@ a=arr[5].name
 var carr=[1,2, {name:"mariam",age:[0,4,[56,90]],}]
 a= carr[2]["age"][2][1]
 
-
+//a=[1,3,{a:1,b:3,c:[1,3,4,{x:5,y:10}]}]
+/* a[2].c[3].x
+a[2]["c"][3]["x"]
+a[2]["c"][3].x */
+//all of them are same; just to access the x's property

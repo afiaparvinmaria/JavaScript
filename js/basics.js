@@ -60,6 +60,28 @@ t=Boolean(x)//returns false cz x=null
 
 
 
+//datatypes: undefined, empty value, null, NaN(not a number)
+
+
+var a1
+console.log(a1)
+//a1==undefined returns true
+//a1===undefined returns true
+//null==undefined returns true
+//null===undefined returns false; they are not same data types
+var b1=null
+//a1===b1 returns false
+
+//NaN,when any math term fails
+var c1="abc"/10 //it returns NaN
+
+
+
+
+
+
+
+
 
 
 
