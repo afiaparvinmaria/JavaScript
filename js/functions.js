@@ -74,15 +74,30 @@ Third Argument (array): It always passes the entire array being iterated over as
 
 
 //// Array iteration using Mapping
-var food1 = ["Cake", "Ice Cream", "Chocolates", "Bread"];
-var number = [1, 32, 31, 2];
-function addsomething(item){
-    return `${item} is a food`
-}
+var foods = ["Cake", "Ice Cream", "Chocolates", "Bread"];
+var numbers = [1, 32, 31, 2];
 
-let show= food1.map(addsomething)
-let show1= number.map(function(item){
+
+function addSomething(item) {
+    return `${item} is a Food`;
+}
+/*function squarenumbers(item){
     return item*item
+}*/
+let arr_res = foods.map(addSomething);
+//Here, the map function applies addSomething to each element of the foods array, producing a new array arr_res where each item is a string indicating that the food item is indeed a food.
+let arr_square = numbers.map(function(item){ //annonymoous function declaration
+    return item*item;
+    //let arr_square = numbers.map(squarenumbers);
 })
-console.log(show)
-console.log(show1)
+
+console.log(arr_res);
+console.log(arr_square); 
+/*output:[
+  'Cake is a Food',
+  'Ice Cream is a Food',
+  'Chocolates is a Food',
+  'Bread is a Food'
+]
+[ 1, 1024, 961, 4 ]
+*/
