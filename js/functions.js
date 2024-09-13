@@ -56,14 +56,14 @@
 
 
 // Array iteration using forEach
-var foods = ["Cake", "Ice Cream", "Chocolates", "Bread"];
-var numbers = [1, 32, 31, 2];
-let printeverything = function(item,i,abc){
-    console.log(`Index : ${i} and Item: ${item}`)
-    console.log(abc)
-}
-//array.forEach(callback)
-foods.forEach(printeverything)//using foreach loop in foods array
+// var foods = ["Cake", "Ice Cream", "Chocolates", "Bread"];
+// var numbers = [1, 32, 31, 2];
+// let printeverything = function(item,i,abc){
+//     console.log(`Index : ${i} and Item: ${item}`)
+//     console.log(abc)
+// }
+// //array.forEach(callback)
+// foods.forEach(printeverything)//using foreach loop in foods array
 
 /* When you call array.forEach(callback), JavaScript processes the array in a very specific way. The forEach() method is built into JavaScript and knows that:
 
@@ -73,8 +73,8 @@ Third Argument (array): It always passes the entire array being iterated over as
 
 
 
-//// Array iteration using Mapping
-var food1 = ["Cake", "Ice Cream", "Chocolates", "Bread"];
+// Array iteration using Mapping
+/* var food1 = ["Cake", "Ice Cream", "Chocolates", "Bread"];
 var number = [1, 32, 31, 2];
 function addsomething(item){
     return `${item} is a food`
@@ -85,4 +85,21 @@ let show1= number.map(function(item){
     return item*item
 })
 console.log(show)
-console.log(show1)
+console.log(show1) */
+
+
+
+
+// Object Method
+let person = {
+    firstname: "Fazle",
+    lastname: "Rahat",
+    dob: "9-10-1995", //number, string, date, array, object
+
+    fullname: function() { //Method as a property
+        return `${this.firstname} ${this.lastname}`;
+    }
+
+}
+console.log(person.firstname);
+console.log(person.fullname());
