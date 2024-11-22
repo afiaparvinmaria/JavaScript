@@ -80,3 +80,13 @@ alert('total cost: $'+(5+3))//total cost: $8
 //3j
 alert(`total cost: $${(599 + 295)/100}
 Thank you, come again!`)//using multiline strings and template literals
+//3k
+`Items(${2+2}): $${(2*2095 + 2*799)/100}`//Items(4): $57.88
+//3l
+'Shipping & handling: $' + (499 + 499)/100
+//`Shipping & handling: $${(499 + 499) / 100}` using template literals
+//3m
+`Total before tax: $${(2095*2 + 799*2 + 499 + 499)/100}`//Total before tax: $67.86
+//3n
+`Estimated tax (10%): ${Math.round((2 * 2095 + 2 * 799 + 499 + 499) * 0.1)/100}`//Estimated tax (10%): 6.79
+//without math.round the result will be 6.7860000000000005
